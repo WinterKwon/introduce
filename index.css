@@ -1,0 +1,102 @@
+html, body {
+    margin :0;
+    padding :0;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+ul {
+    list-style:none;
+}
+
+/* #container{
+    width:1080px;
+} */
+
+img{
+    float:left;
+}
+/* 헤더의 네비게이션 비율 조정 */
+#intro h1 {
+    float:left;
+    width:50%;
+    /* background-color: aliceblue; */
+    height: 80px;
+    margin :0;
+    padding: 14px 0 0 0;
+    text-align: center;
+ 
+    
+}
+
+#intro nav{
+/*     
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 2; */
+   
+    float:right;
+    width:50%;  
+    height: 80px;
+    /* background-color: antiquewhite; */
+  
+  
+    text-align: center;
+    clear: right;
+}
+
+#intro nav ul li {
+    float:left;
+    width: 33.3333%;
+    line-height:60px;
+   
+}
+
+/* #intro nav ul li.n1 {
+    background-color:rgb(227, 233, 238);
+}
+#intro nav ul li.n2 {
+    background-color:rgb(200, 206, 212);
+}
+#intro nav ul li.n3 {
+    background-color:rgb(183, 187, 191);
+} */
+
+main > article > h2 {
+    
+    color: red;
+}
+
+/* 글자위에 마우스 오버시 줌 기능 */
+/* 좌우 자구간 간격 조정X */
+/* jquery시도 */
+.enlarge{
+    display:inline-block;
+
+}
+
+.enlarge:hover{
+transform: scale(1.2, 1.2);
+}
+
+
+@media (min-width:320px) and (max-width:800px) {
+    .container {
+       width: 960px;   
+   }
+   
+   #intro{
+   height:160px;  /*기존 intro 높이의 2배가 되어야 하므로*/
+   }
+   
+   #intro h1{
+   width:100%; /*이젠 모바일 화면 너비를 다 차지하도록*/
+   }
+   
+   #intro nav{
+   width:100%;  /*nav를 미디어쿼리에 넣어주지 않으면? 상하단까지만 미디어쿼리 적용되고 전체 nav는 적응형으로 남아있을 것*/
+   }
+   }
