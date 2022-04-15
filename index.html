@@ -4,54 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduce</title>
+    <title>INTRODUCE</title>
     <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 </head>
 <body>
-  <div class="container">
-      <header id = "intro">
-        <div id = "container_img"><img src="/img/nav_img.jpg" alt="nightsky" width = "1080" height = "150" >
-        </div>
-        <div class="clear-fix"></div>
-        <h1><img src="/img/penguine2.png" alt="penguine" width = "80px">
-            권필주</h1>
-        <nav>
-             <ul>
-                 <li class="n1"><a href="#">Home</a></li>
-                 <li class="n2"><a href="#">What I am doing</a></li>
-                 <li class="n3"><a href="#">What I will do</a></li>
-             </ul>
-          </nav>
-      </header>
-
-      <br> 
-      <div class="clear-fix"></div>
-        <main id="main">
-            <div>
-                <article id="article1">
-                    <!-- <h1>권필주</h1> -->
-                    <!-- <h2>I <span>code</span>, <span>program</span> and <span>develop</span> things.</h2> -->
-                    <h2>I <span class="enlarge">code</span>, <span class="enlarge">program</span> and <span class="enlarge">develop</span> things.</h2>
-                </article>
+    <div class="container">
+        <header>
+            <div id = "cover">
+                <img src="/img/nav_img.jpg" alt="nightsky">
             </div>
-            
-            <div class="clear-fix"></div>
 
-            <article id="article2">
+            <div class="nav_container">
+                <div class = "nav_subcontainer">
+
+                    <img src="/img/penguine2.png" alt="penguine" width = "70px">
+                    
+                    <div id="nav_text">
+                        <h1>권필주</h1>
+                        <p>개발공부가 한창인^^</p>
+                    </div>
+
+                    <a class = nav_icon id="home" href="#"><img src = "/img/home.png" alt="home" width = "100px"><p>home</p></a>
+
+                    <a class = nav_icon id = "present" href="#"><img src = "/img/sand_watch_present.png" alt="present" width = "100px"><p>What I am doing</p></a>
+
+                    <a class = nav_icon id = "future" href="#"><img src = "/img/sand_watch_future.png" alt="future" width = "100px"><p>What I will do</p></a>
+
+                    
+                </div>
                 
 
-            </article>
+            
+            </div>  <!--nav_container-->
+        </header>
 
-            <div class="clear-fix"></div>
-            <article></article>
-        </main>
+        <article id="article1">
+               
+                <h2>I <span class="enlarge">code</span>, <span class="enlarge">program</span> and <span class="enlarge">develop</span> things.</h2>
+        </article>
+        
+        <article id="article2">
+            <h4>
+                <ul>
+                    <li>관심직무</li>
+                    
+                    <li>관심 분야 또는 기술</li>
+                    <li>SW트랙에서 기대되는 점</li>
+                    <li>동료 레이서에게 하고 싶은 말</li>
+                    <li>About me</li>
+                </ul>
+            </h4>
+            
+
+        </article>
+
         <footer>
-      
+            <div>
+                <p>이메일 : pjkwon21@gmail.com</p>
+            </div>
+            <div>
+                <p>주소 : **** ***********</p>
+            </div>
         </footer>
-  </div>
 
-    
-<script src="index.js"></script>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

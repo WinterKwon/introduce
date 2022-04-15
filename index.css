@@ -2,9 +2,16 @@ html, body {
     margin :0;
     padding :0;
 }
-.container {
-    width : 1080px;
+
+
+.container{
+    width:1080px;
 }
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 a {
     text-decoration: none;
     color:black;
@@ -14,112 +21,88 @@ ul {
     list-style:none;
 }
 
-/* #container{
-    width:1080px;
-} */
+.nav_subcontainer {
+    display:grid;
+    grid-template-columns: 100px 2fr 1fr 1fr 1fr;
 
-img{
-    float:left;
 }
 
-.clear-fix{
-    clear:both;
+
+
+.nav_subcontainer>img{
+    padding:20px 0 0 20px;
 }
-/* 헤더의 네비게이션 비율 조정 */
-#intro h1 {
-    float:left;
-    width:50%;
-    /* background-color: aliceblue; */
-    height: 80px;
-    margin :0;
-    padding: 14px 0 0 0;
+#nav_text {
+    padding: 14px 0 0 14px;
+    color:black;
+}
+#nav_text h1{
+    display:inline;
+    
+}
+
+.nav_icon p{
+    color:white;
+}
+
+.nav_icon p:hover {
+    color:black;
+}
+
+
+#article1{
     text-align: center;
+}
+
+#article1 h2{
+    display:inline;
+}
+
+
+.enlarge:hover{
+    transform: scale(1.2, 1.2);
+    color:grey;
+    }
+
+@media all and (min-width:480px){
+    .nav_container{
+        display:grid;
+        grid-template-columns: auto;
+    }
+    
+    
+  
+    
+}
+
+
+/* 
+#cover img {
+    display: flex;
+    width:100%;
  
     
 }
 
-#intro nav{
-/*     
+
+.nav_container {
     display:flex;
-    flex-wrap: wrap;
-    flex-grow: 2; */
-   
-    float:right;
-    width:50%;  
-    height: 80px;
-    /* background-color: antiquewhite; */
-    max-height:80px;
-  
-    text-align: center;
-   
+    width:100%;
 }
 
-#intro nav ul li {
-    float:left;
-    width: 33.3333%;
-    line-height:60px;
-   
+.nav_subcontainer {
+    display:inline-block;
+    width:50%;
 }
-
-/* 화면폭이 800이상 820정도일때 n2 영역 커지는 현상(->120*120) 처리 못함 */
-/* #n2{
-    max-height:100px;
-} */  
-
-
-
-/* #intro nav ul li.n1 {
-    background-color:rgb(227, 233, 238);
-}
-#intro nav ul li.n2 {
-    background-color:rgb(200, 206, 212);
-}
-#intro nav ul li.n3 {
-    background-color:rgb(183, 187, 191);
+/* .nav_subcontainer h1 {
+    display:flex;
+    width:50%;
 } */
 
-
-#article1 > h2 {
-    height:100px;
-    text-align: center;
-    
+li.item {
+    max-width: 100%;
 }
 
-
-/* 글자위에 마우스 오버시 줌 기능 */
-/* 좌우 자구간 간격 조정X */
-/* jquery시도 */
-.enlarge{
-    display:inline-block;
-
-}
-
-.enlarge:hover{
-transform: scale(1.2, 1.2);
-color:grey;
-}
-
-
-@media (min-width:320px) and (max-width:800px) {
-   #container_img{
-       width: 800p;
-       height:150px;
-   }
-   
-   #intro{
-   height:160px;  /*기존 intro 높이의 2배가 되어야 하므로*/
-   }
-   
-   #intro h1{
-   width:100%; /*이젠 모바일 화면 너비를 다 차지하도록*/
-   }
-   
-   #intro nav{
-   width:100%;  /*nav를 미디어쿼리에 넣어주지 않으면? 상하단까지만 미디어쿼리 적용되고 전체 nav는 적응형으로 남아있을 것*/
-   
-   }
-
-   #article1 {
-       width:100%;
-   }
-   }
+.nav_subcontainer img {
+    max-width: 100%;
+} */
