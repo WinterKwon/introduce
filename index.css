@@ -74,35 +74,3 @@ ul {
   
     
 }
-
-
-/* 
-#cover img {
-    display: flex;
-    width:100%;
- 
-    
-}
-
-
-.nav_container {
-    display:flex;
-    width:100%;
-}
-
-.nav_subcontainer {
-    display:inline-block;
-    width:50%;
-}
-/* .nav_subcontainer h1 {
-    display:flex;
-    width:50%;
-} */
-
-li.item {
-    max-width: 100%;
-}
-
-.nav_subcontainer img {
-    max-width: 100%;
-} */
